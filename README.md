@@ -34,3 +34,21 @@ https://raw.githubusercontent.com/Damao93/egern-widgets/main/ChinaTelecom/ChinaT
 ## 隐私
 
 仓库只包含通用代码和空参数模板，不包含个人手机号、服务密码、设备 ID、登录令牌或缓存。登录和查询地址沿用电信原脚本；不要向仓库、聊天或第三方提交自己的密码或验证码。
+
+
+## 中国电信 · Hark iOS 三环样式（独立版本）
+
+新增远程模块地址：
+
+```
+https://raw.githubusercontent.com/Damao93/egern-widgets/main/ChinaTelecom/ChinaTelecom_Hark_iOS.yaml
+```
+
+界面来自 [zhaohantao1360-hash/Hark](https://github.com/zhaohantao1360-hash/Hark) 的 `china-mobile-hark-ios.js`，已适配电信。原玻璃版文件与链接不变。
+
+- 三环分别对应通用流量、定向流量和语音；没有分项数据时显示未知，不编造数据。
+- 保留电信原登录、查询、30分钟缓存和模块参数；不移入移动登录抓取、HTTPS解密、后台保活或报告接口。
+- 保留通用/定向、已用/剩余开关；仅选一种流量时另一行标注未计入。
+- 今日/近7日为已记录余量变化的估算；日均可用按当前余量除以距自然月月底的天数估算，不代表套餐结算日或官方账单。
+- 20项离线测试通过，覆盖7种尺寸和分项、百分比、开关、未知值、零余量、旧缓存保护。没有访问用户电信账号，尚未在用户手机上真机验证排版。
+- 在新模块设置中填写自己原有参数；原模块保留并关闭，新旧不要同时启用。仓库内不放手机号、密码、设备ID或令牌。
